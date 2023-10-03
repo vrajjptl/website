@@ -11,7 +11,6 @@
     transform: translateY(-50%);
 }
 
-/* Animation */
 .anim-typewriter {
     animation: typewriter 4s steps(44) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
@@ -34,5 +33,240 @@
 
     to {
         border-right-color: transparent;
+    }
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    color: #4a90e2;
+}
+
+button.w3-button {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
+
+button.w3-button:hover {
+    background-color: #357abf;
+}
+
+ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+li a {
+    text-decoration: circle;
+    color: #4a90e2;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.w3-light-grey {
+    background-color: #f4f4f4;
+}
+
+.w3-light-blue {
+    background-color: #4a90e2;
+}
+
+.w3-card {
+    border-radius: 10px;
+}
+
+.w3-section {
+    margin-bottom: 16px;
+}
+
+.w3-xlarge {
+    color: #4a90e2;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #357abf;
+}
+
+nav.w3-sidebar {
+    transition: width 0.3s;
+}
+
+header.w3-container {
+    animation: fadeInUp 1s;
+}
+
+.w3-container.w3-center.w3-padding-small {
+    animation: slideInLeft 1s;
+}
+
+ul.w3-ul {
+    animation: slideInRight 1s;
+}
+
+div.w3-content.w3-text-grey {
+    animation: slideInUp 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.w3-button {
+    background-color: rgb(126, 34, 206);
+}
+
+.w3-button:hover {
+    background-color: rgb(100, 20, 176);
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Add this to your existing CSS */
+
+@media (max-width: 768px) {
+
+    /* Adjustments for smaller screens go here */
+    .w3-sidebar {
+        display: none;
+    }
+
+    .header-content {
+        padding: 64px 16px;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content p {
+        font-size: 1.2em;
+    }
+
+    .portfolio-item a {
+        font-size: 1.2em;
+    }
+
+    .about-content {
+        font-size: 1.2em;
+    }
+
+    .about-content .w3-padding-16 {
+        font-size: 1em;
+    }
+
+    .skills-list .w3-padding-small {
+        font-size: 1em;
+    }
+
+    .skills-list .w3-light-grey,
+    .skills-list .w3-light-blue {
+        height: 20px;
+    }
+
+    .stats-item,
+    .freelance-item {
+        font-size: 1em;
+    }
+
+    .contact-content {
+        font-size: 1.2em;
+    }
+
+    .contact-content .w3-section p {
+        font-size: 1em;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .contact-form input[type="text"] {
+        font-size: 1em;
+    }
+
+    .contact-form button {
+        font-size: 1em;
+    }
+
+    .footer-content p {
+        font-size: 1em;
     }
 }

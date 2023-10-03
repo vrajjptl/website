@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-<title>MY Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="portfolio.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Montserrat", sans-serif
-  }
-</style>
+
+<head>
+  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+</head>
 
 <body>
   <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
@@ -27,7 +30,7 @@
       <i class="fa fa-remove"></i>
     </a>
     <div class="w3-bar-block w3-center">
-      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
       <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
       <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
       <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
@@ -37,41 +40,36 @@
     onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b><Span style="color: rgb(126 34 206); font-weight: 700;">Viraj Patil</Span></b></h1>
+    <h1 class="w3-jumbo"><b><span style="color: rgb(126, 34, 206); font-weight: 700;">Viraj Patil</span></b></h1>
     <p class="line-1 anim-typewriter">CSE | Software Developer | Fresher | 22</p>
-    <a href="https://rxresu.me/vrajpatil9891/viraj-patil9891" download>
+    <a href="https://rxresu.me/vrajpatil9891/viraj-patil9891" target="_blank">
       <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
         <i class="fa fa-download"></i> Download Resume
       </button>
     </a>
-
   </header>
 
   <!-- Portfolio Section -->
   <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey"><Span>Certification :</Span></h2>
+    <h2 class="w3-text-grey"><span>Certification :</span></h2>
     <hr class="w3-opacity">
 
-    <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <ul>
           <li><a href="https://drive.google.com/file/d/1L56YDdaugGXOaK8NnjUD7y54VUUB9j1a/view?usp=sharing"
               target="_blank">AWS Academy Cloud Foundations</a></li>
           <li><a href="https://drive.google.com/file/d/1hjQyuSGUsBEEyx3QqsrCIiplXJAQUenE/view?usp=drive_link"
-              target="_blank">ARTIFICIAL INTELLIGENCE
-              BY ACCENTURE</a></li>
+              target="_blank">ARTIFICIAL INTELLIGENCE BY ACCENTURE</a></li>
           <li><a href="https://drive.google.com/file/d/1Qr1j_Pz7aHz3DSbE145Nb5CgYsCNlc27/view?usp=drive_link"
-              target="_blank">CLI With Golang From
-              Infosys</a></li>
+              target="_blank">CLI With Golang From Infosys</a></li>
         </ul>
       </div>
 
       <div class="w3-half">
         <ul>
           <li><a href="https://drive.google.com/file/d/1R2cQC8T1kRloRUr-HgzxcT3i8SpV9TQR/view?usp=drive_link"
-              target="_blank">Database Operations in MariaDB Using Python
-              From Infosys</a></li>
+              target="_blank">Database Operations in MariaDB Using Python From Infosys</a></li>
           <li><a href="https://drive.google.com/file/d/1IixMpu7t1SwO54YQww-GurTHl9ZF_jyH/view?usp=drive_link"
               target="_blank">Set Up Network and HTTP Load Balancers</a></li>
           <li><a href="https://drive.google.com/file/d/1elwwDGZlo17wG4st0qCiGSkoxuS6mDO2/view?usp=drive_link"
@@ -80,17 +78,17 @@
         </ul>
       </div>
     </div>
-
   </div>
 
+  <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2>About</h2>
     <hr class="w3-opacity">
     <p>
-      Passionate Computer Science Engineer | Proficient in Basic Linux, Java, C Programming, SQL, Core Java, HTML, CSS,
-      and WordPress | Enthusiastic learner with a strong grasp of technology and domain | Eager to embrace new
-      challenges and technologies | Excel in problem-solving and data analysis | Open to exciting opportunities and
-      collaborations.
+      Passionate Computer Science Engineer | Proficient in Basic Linux, Java, C Programming, SQL, Core Java,
+      HTML, CSS, and WordPress | Enthusiastic learner with a strong grasp of technology and domain | Eager to
+      embrace new challenges and technologies | Excel in problem-solving and data analysis | Open to exciting
+      opportunities and collaborations.
     </p>
 
     <h3 class="w3-padding-16">My Skills :</h3>
@@ -154,14 +152,14 @@
       </div>
     </div>
 
-    <a href="https://rxresu.me/vrajpatil9891/viraj-patil9891" download>
+    <a href="https://rxresu.me/vrajpatil9891/viraj-patil9891" target="_blank">
       <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
         <i class="fa fa-download"></i> Download Resume
       </button>
     </a>
 
     <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16">FreeLance Available :</h3>
+    <h3 class="w3-padding-16">Freelance Available :</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-center w3-card w3-hover-shadow">
@@ -200,21 +198,21 @@
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact">
     <h2>Contact Me</h2>
     <hr class="w3-opacity">
 
     <div class="w3-section">
       <p>
-        <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>
-        Aitawade Khurd, Sangli, Maharastra 415409
+        <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
+        Aitawade Khurd, Sangli, Maharashtra 415409
       </p>
       <p>
-        <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>
+        <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
         Phone: <a href="tel:+917414912464">+91 7414912464</a>
       </p>
       <p>
-        <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>
+        <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
         Email: <a href="mailto:vrajpatil9891@gmail.com">vrajpatil9891@gmail.com</a>
       </p>
     </div>
@@ -223,8 +221,7 @@
       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
     </iframe>
 
-
-    <p>Lets get in touch. Send me a message:</p>
+    <p>Let's get in touch. Send me a message:</p>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
@@ -236,18 +233,16 @@
         </button>
       </p>
     </form>
-    <!-- End Contact Section -->
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
     <a href="https://twitter.com"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     <a href="www.linkedin.com/in/vrajptl"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     <a href="https://github.com/vrajjptl"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.hackerrank.com/vrajpatil9891"><i class="	fa fa-user-secret w3-hover-opacity"></i></a>
-    <p class="w3-medium">Powered by Viraj patil.</p>
+    <a href="https://www.hackerrank.com/vrajpatil9891"><i class="fa fa-user-secret w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by Viraj Patil.</p>
   </footer>
-  </div>
 
   <script>
     function openNav() {
@@ -259,7 +254,6 @@
       document.getElementById("mySidebar").style.display = "none";
     }
   </script>
-
 </body>
 
 </html>
